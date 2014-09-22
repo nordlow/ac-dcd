@@ -454,10 +454,9 @@ dcd-client outputs candidates that begin with \"this\" when completing struct co
           '("-d")
           (list (buffer-file-name))))
         (buf (get-buffer-create ac-dcd-document-buffer-name)))
-
     (with-current-buffer buf
       (erase-buffer)
-
+      (ac-dcd-maybe-start-server)
       (apply 'call-process-region (point-min) (point-max)
              ac-dcd-executable nil buf nil args)
       (when (or
