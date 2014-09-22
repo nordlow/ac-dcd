@@ -38,7 +38,7 @@
 ;;             (ac-dcd-add-imports)
 ;;             (add-to-list 'ac-sources 'ac-source-dcd)))
 
-;;; TODO: Use: echo | dcd-client --search filter
+;;; TODO: Use: echo | dcd-client --search filter. See also: https://github.com/Hackerpilot/DCD/issues/162
 
 ;;; Code:
 
