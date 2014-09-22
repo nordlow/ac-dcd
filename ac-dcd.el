@@ -38,6 +38,8 @@
 ;;             (ac-dcd-add-imports)
 ;;             (add-to-list 'ac-sources 'ac-source-dcd)))
 
+;;; TODO: Use: echo | dcd-client --search filter
+
 ;;; Code:
 
 (require 'auto-complete)
